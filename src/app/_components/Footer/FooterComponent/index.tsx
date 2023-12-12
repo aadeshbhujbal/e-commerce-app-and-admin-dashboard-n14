@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,6 +15,7 @@ import classes from './index.module.scss'
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
   const navItems = footer?.navItems || []
+
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
       <Gutter>
@@ -25,20 +27,25 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                 alt={inclusion.title}
                 width={36}
                 height={36}
-                className={inclusion.icon}
+                className={classes.icon}
               />
-              <h5>{inclusion.title}</h5>
+
+              <h5 className={classes.title}>{inclusion.title}</h5>
+              <p>{inclusion.description}</p>
             </li>
           ))}
         </ul>
       </Gutter>
+
       <div className={classes.footer}>
         <Gutter>
           <div className={classes.wrap}>
             <Link href="/">
-              <Image alt="Logo" src="/logo-white.svg" width={170} height={50} />
+              <Image src="/logo-white.svg" alt="logo" width={170} height={50} />
             </Link>
-            <p>{footer.copyright}</p>
+
+            <p>{footer?.copyright}</p>
+
             <div className={classes.socialLinks}>
               {navItems.map(item => {
                 const icon = item?.link?.icon as Media
