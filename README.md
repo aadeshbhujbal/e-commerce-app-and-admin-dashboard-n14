@@ -1,4 +1,5 @@
 #  E-Commerce Website Using NextJs 
+![Admin](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/product_admin.png)
 
 This template is right for you if you are selling:
 
