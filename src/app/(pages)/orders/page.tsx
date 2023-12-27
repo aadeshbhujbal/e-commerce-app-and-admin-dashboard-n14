@@ -66,7 +66,7 @@ export default async function Orders() {
                       {'Total: '}
                       {new Intl.NumberFormat('en-IN', {
                         style: 'currency',
-                        currency: 'INR',
+                        currency: 'inr',
                       }).format(order.total / 100)}
                     </p>
                   </div>

@@ -58,7 +58,7 @@ export default async function Orders() {
                   <div className={classes.itemMeta}>
                     <p>
                       {'Total: '}
-                      {new Intl.NumberFormat('en-US', {
+                      {new Intl.NumberFormat('en-IN', {
                         style: 'currency',
                         currency: 'usd',
                       }).format(order.total / 100)}
