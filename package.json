@@ -17,8 +17,7 @@
     "copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png,js}\" dist/",
     "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload generate:types",
     "generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload generate:graphQLSchema",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix --ext .ts,.tsx src",
+
     "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload"
   },
   "dependencies": {
@@ -35,6 +34,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "escape-html": "^1.0.3",
+    "eslint-plugin-disable": "^2.0.3",
     "express": "^4.17.1",
     "next": "13.5.2",
     "payload": "^2.0.7",
@@ -58,14 +58,8 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.19.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
+
+
     "nodemon": "^2.0.6",
     "prettier": "^2.7.1",
     "slate": "0.91.4",
@@ -74,5 +68,10 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
+  },
+  "eslintConfig": {
+    "rules": {
+      "jsx-a11y/accessible-emoji": "off"
+    }
   }
 }
