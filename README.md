@@ -1,5 +1,14 @@
 #  E-Commerce Website Using NextJs 
+![Hero](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/hero.png)
+![categories](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/categories.png)
+![all_products](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/all_products.png)
+![product_page](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/product_page.png)
+![cart_page](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/cartPage.png)
+![footer](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/footer.png)
+![Product Admin2](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/product_admin2.png)
+![Product SEO](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/ProductSEO.png)
 ![Admin](https://github.com/aadeshbhujbal/e-commerce-app-and-admin-dashboard-n14/blob/main/product_admin.png)
+
 
 This template is right for you if you are selling:
 
