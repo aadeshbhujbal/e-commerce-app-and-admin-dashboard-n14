@@ -1,6 +1,4 @@
-# Payload E-Commerce Template
-
-This is the official [Payload E-Commerce Template](https://github.com/payloadcms/payload/blob/main/templates/ecommerce). Use it to power e-commerce businesses and online stores of all sizes. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
+#  E-Commerce Website Using NextJs 
 
 This template is right for you if you are selling:
 
@@ -27,22 +25,6 @@ To spin up this example locally, follow these steps:
 ### Clone
 
 If you have not done so already, you need to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
-
-#### Method 1 (recommended)
-
-  Go to Payload Cloud and [clone this template](https://payloadcms.com/new/clone/ecommerce). This will create a new repository on your GitHub account with this template's code which you can then clone to your own machine.
-
-#### Method 2
-
-  Use the `create-payload-app` CLI to clone this template directly to your machine:
-
-    npx create-payload-app@latest my-project -t ecommerce
-
-#### Method 3
-
-  Use the `git` CLI to clone this template directly to your machine:
-
-    git clone -n --depth=1 --filter=tree:0 https://github.com/payloadcms/payload my-project && cd my-project && git sparse-checkout set --no-cone templates/ecommerce && git checkout && rm -rf .git && git init && git add . && git mv -f templates/ecommerce/{.,}* . && git add . && git commit -m "Initial commit"
 
 ### Development
 
@@ -303,7 +285,7 @@ To seed the database with a few products and pages you can run `yarn seed`. This
 
 To run Payload in production, you need to build and serve the Admin panel. To do so, follow these steps:
 
-1. Invoke the `payload build` script by running `yarn build` or `npm run build` in your project root. This creates a `./build` directory with a production-ready admin bundle.
+1. Invoke the script by running `yarn build` or `npm run build` in your project root. This creates a `./build` directory with a production-ready admin bundle.
 1. Finally run `yarn serve` or `npm run serve` to run Node in production and serve Payload from the `./build` directory.
 1. When you're ready to go live, see [Deployment](#deployment) for more details.
 
